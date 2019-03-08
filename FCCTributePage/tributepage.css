@@ -1,0 +1,52 @@
+html {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+#title {
+    text-align: center;
+    background-color: #ffcd91;
+}
+
+#main {
+    width: 100%;
+}
+
+#image {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    margin: auto;
+    display: block;
+    border: 5px solid #ffbb10
+}
+
+#img-caption {
+    text-align: center;
+}
+
+#tribute-info, ul {
+    margin: auto;
+    max-width: 800px;
+}
+
+.footer {
+    margin-bottom: 0px;
+    text-align: center;
+    background: #ffcd91;
+}
+
+body{
+    background-color: #ffe4c4;
+}
+
+#info {
+    text-align: center
+}
