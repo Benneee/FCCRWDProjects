@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Coders Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="surveyform.css">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1 id="title">
+                The Coders Survey Form
+            </h1>
+        </div>
+
+        <div id="main">
+            <div id="content">
+            <p id="description">
+                This is a simple form to understand CodeNewbies career decisions so far
+            </p>
+            <form id="survery-form">
+                <label for="name" id="name-label">Name:
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </label>
+
+                <br><br>
+
+                <label for="email" id="email-label">Email:
+                    <input type="text" id="email" placeholder="Enter a valid email" required email>
+                </label>
+
+                <br><br>
+
+                <label for="age" id="number-label">Age:
+                    <input type="number" id="number" min="10" max="100" placeholder="Enter age">
+                </label>
+
+                <br><br>
+
+                   <p> What option best describes when you started coding?</p>
+                    <select id="select">
+                        <option id="dropdown" value="">Please select one</option>
+                        <option id="dropdown" value="childhood">Early Childhood</option>
+                        <option id="dropdown" value="teenage">Teenage years</option>
+                        <option id="dropdown" value="uni">University days</option>
+                        <option id="dropdown" value="young adult">Post-university days</option>
+                    </select>
+                <br>
+
+                   <p> What is your current stack or coding interest?</p>
+                    <div>
+                        <input type="radio" value="front-end" name="stack">
+                        <label for="front-end">Front-end</label>
+                        <br>
+                        <input type="radio" value="back-end" name="stack">
+                        <label for="front-end">Back-end</label>
+                        <br>
+                        <input type="radio" value="full-stack" name="stack">
+                        <label for="front-end">Full-stack</label>
+
+                    </div>
+                    
+                    <br>
+
+                    <p>Do you have other language or framework preferences? Select all that apply:</p>
+                    <div>
+                        <input type="checkbox" checked value="python">
+                        <label for="python">Python</label>
+                        <br>
+                        <input type="checkbox" value="C#">
+                        <label for="C#">C#</label>
+                        <br>
+                        <input type="checkbox" value="Java">
+                        <label for="java">Java</label>
+                        <br>
+                        <input type="checkbox" value="JavaScript">
+                        <label for="JavaScript">JavaScript</label>
+                        <br>
+                        <input type="checkbox" value="JS frameworks">
+                        <label for="JS frameworks">JavaScript frameworks</label>
+                        <br>
+                        <input type="checkbox" value="others">
+                        <label for="others">Others</label>
+                    </div>
+
+                    <p>Describe in a few sentences your biggest coding moments so far:</p>
+                    <textarea 
+                    name="moments" id="moments" 
+                    ~cols="33" rows="5">Describe your best coding moments so far...
+                        
+                    </textarea>
+
+                    <br><br>
+
+                    <input id="submit" type="button" value="Submit">
+            </form>
+            </div>
+        </div>
+    </div>   
+
+    
+</body>
+</html>
