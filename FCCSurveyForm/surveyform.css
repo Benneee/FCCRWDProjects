@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    font-family: monospace, 'Segoe UI';
+}
+
+body {
+    background-color: #FFD100;
+    overflow: auto;
+}
+
+h1#title {
+    text-align: center;
+    font-size: 70px;
+    background: lightblue;
+}
+
+#main {
+    margin: auto;
+    padding: auto;
+    width: 70%;
+    background: white;
+    text-align: center;
+    font-size: 2em;
+    padding: 40px;
+}
+
+#content {
+    width: 80%;
+    margin: auto;
+}
+
+input[type='radio'], input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+}
+
+#number, #name, #email, #dropdown {
+    width: 300px;
+    height: 30px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+select {
+    padding: 10px;
+    width: 200px;
+}
+
+textarea {
+    width: 400px;
+    text-align: left;
+}
+
+input#submit {
+    width: 300px;
+    padding: 15px;
+    background: greenyellow;
+    color: blue;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow: auto;
+    }
+    h1#title {
+        text-align: center;
+        font-size: 1.5em;
+        background: lightblue;
+        margin: auto;
+    }
+    
+    p#description {
+        font-size: 20px;
+    }
+
+    #main {
+        margin: 20px auto;
+        padding: auto;
+        width: 80%;
+        background: white;
+        text-align: center;
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    #content {
+        width: 80%;
+        margin: auto;
+    }
+
+    #number, #name, #email, #dropdown {
+        width: 150px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    select {
+        padding: 5px;
+        width: 150px;
+    }
+
+    textarea {
+        width: 150px;
+        text-align: left;
+    }
+
+    input[type='radio'], input[type='checkbox'] {
+        padding: 20px;
+        width: 15px;
+        height: 15px;
+    }
+
+    input#submit {
+        width: 150px;
+        padding: 5px;
+        background: greenyellow;
+        color: blue;
+        border-radius: 5px;
+    }
+}
