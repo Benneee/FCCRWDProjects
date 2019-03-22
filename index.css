@@ -1,6 +1,10 @@
+* {
+    box-sizing: border-box;
+}
+
 nav {
     background: whitesmoke;
-    height: 100px;
+    height: 50px;
 }
 
 a {
@@ -22,9 +26,11 @@ body {
 
 img {
     margin: 12px;
+    height: 400px;
+    width: 550px;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -38,4 +44,50 @@ h4 {
     font-size: 2em;
     margin-top: 20px;
     word-spacing: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    .logos {
+        text-align: center;
+        font-size: 1em;
+        margin-top: 10px;
+        word-spacing: 0.75em;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    img {
+        margin: 12px;
+        height: 200px;
+        width: 350px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+    
+    h4 {
+        text-align: center;
+        font-size: 0.75em;
+    }
+
+    nav {
+        background: whitesmoke;
+        height: 50px;
+    }
+    
+    a {
+        display: inline;
+        text-decoration: none;
+        padding: 0px;
+        cursor: pointer;
+    }
 }
