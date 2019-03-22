@@ -3,17 +3,11 @@ nav {
     height: 100px;
 }
 
-ul li {
+a {
     display: inline;
-    font-size: 2.5em;
-    font-weight: 500px;
+    font-size: 3em;
     text-decoration: none;
-    margin: 0 50px 0 50px;
     padding: 0px;
-}
-
-li a {
-    text-decoration: none;
 }
 
 body {
@@ -32,4 +26,16 @@ img {
 
 h1 {
     text-align: center;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.logos {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    word-spacing: 1.5em;
 }
