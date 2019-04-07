@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TechDoc Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="techdoc.css" />
+  </head>
+  <body>
+    <div class="sidenav">
+      <nav id="navbar">
+        <header id="header"><h1>Python Docs</h1></header>
+        <ul>
+          <a href="#Introduction" class="nav-link"> <li>Introduction</li></a>
+          <a href="#The_Zen_Of_Python" class="nav-link"
+            ><li>The Zen Of Python</li></a
+          >
+          <a href="#Prerequisites" class="nav-link"> <li>Prerequisites</li></a>
+          <a href="#Python_Editions" class="nav-link">
+            <li>Python Editions</li></a
+          >
+          <a href="#Basic_Syntax" class="nav-link"> <li>Basic Syntax</li></a>
+          <a href="#Variables_and_Data_Types" class="nav-link">
+            <li>Variables and Data Types</li></a
+          >
+          <a href="#Basic_Operators" class="nav-link">
+            <li>Basic Operators</li></a
+          >
+          <a href="#Decision_Making" class="nav-link">
+            <li>Decision Making</li></a
+          >
+          <a href="#Loops" class="nav-link"> <li>Loops</li></a>
+          <a href="#Lists" class="nav-link"> <li>Lists</li></a>
+          <a href="#Functions" class="nav-link"> <li>Functions</li></a>
+          <a href="#Reference" class="nav-link"> <li>Reference</li></a>
+        </ul>
+      </nav>
+    </div>
+
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header><h1>Introduction</h1></header>
+        <article>
+          <p>
+            Python is a general purpose interpreted, interactive,
+            object-oriented and high-level programming language. It was created
+            by Guido van Rossum during 1985- 1990. Like Perl, Python source code
+            is also available under the GNU General Public License (GPL).
+          </p>
+          <p>
+            Python 2.0 was released on 16 October 2000 with many major new
+            features, including a cycle-detecting garbage collector and support
+            for Unicode
+          </p>
+          <p>
+            Python 3.0 was released on 3 December 2008. It was a major revision
+            of the language that is not completely backward-compatible. Many of
+            its major features were backported to Python 2.6.x and 2.7.x version
+            series. Releases of Python 3 include the 2to3 utility, which
+            automates (at least partially) the translation of Python 2 code to
+            Python 3
+          </p>
+          <p>
+            My code examples will be a mixture of both versions (2 and 3).
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="The_Zen_Of_Python">
+        <header><h1>The Zen Of Python</h1></header>
+        <article>
+          <p>
+            Love a Good Read? Open up your Python Interpreter, type in the
+            following code:
+          </p>
+          <code>import this</code>
+          <p>The beautiful lines below show up. Go ahead, try it</p>
+          <ul>
+            <p>The Zen of Python, by Tim Peters</p>
+            <li>Beautiful is better than ugly</li>
+            <li>Explicit is better than implicit</li>
+            <li>Simple is better than complex</li>
+            <li>Complex is better than complicated</li>
+            <li>Flat is better than nested</li>
+            <li>Sparse is better than dense</li>
+            <li>Readability counts</li>
+            <li>Special cases aren't special enough to break the rules</li>
+            <li>Although practicality beats purity</li>
+            <li>Errors should never pass silently</li>
+            <li>Unless explicitly silenced</li>
+            <li>In the face of ambiguity, refuse the temptation to guess</li>
+            <li>
+              There should be one - and preferably only one - obvious way to do
+              it
+            </li>
+            <li>
+              Although that way may not be obvious at first unless you're Dutch
+            </li>
+            <li>Now is better than never</li>
+            <li>Although never is often better than *right* now</li>
+            <li>If the implementation is hard to explain, it's a bad idea</li>
+            <li>
+              If the implementation is easy to explain, it may be a good idea
+            </li>
+            <li>
+              Namespaces are one honking great idea - let's do more of those!
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Prerequisites">
+        <header><h1>Prerequisites</h1></header>
+        <article>
+          <p>
+            It is not a must to have any knowledge of programming before you
+            start Python. Python for me is the preferred first programming
+            language. I might be wrong or a bit bias because it was my first
+            programming language, but it's not possible for several websites to
+            be lying when they all say or imply that Python is easy to learn.
+            What you do need is a device that you can run Python on. These days,
+            even mobile phones have a Python app that can be used on them.
+          </p>
+          <p>
+            You need to download the Python interpreter. I have the Python 3.7
+            interpreter installed in my windows machine. I did not need to set
+            any path in the environment variables. However, if yours was not set
+            after installation, follow this
+            <a
+              href="https://www.tutorialspoint.com/python/python_environment.htm"
+              >Guide</a
+            >
+            or just look though this
+            <a
+              href="https://www.google.com/search?q=setting+up+python+on+windows&rlz=1C1HLDY_enNG823NG823&oq=setting+up+python+&aqs=chrome.1.69i57j0l5.7295j0j1&sourceid=chrome&ie=UTF-8"
+              >Page</a
+            >
+            returned after a quick Google search and choose a destination.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Python_Editions">
+        <header><h1>Python Editions</h1></header>
+        <article>
+          <p>
+            As mentioned in the introduction, there are various versions of
+            Python. However, these versions can be streamlined to be two:
+          </p>
+          <ol>
+            <li>Python 2</li>
+            <li>Python 3</li>
+          </ol>
+          <p>
+            One major difference in the syntax of both versions has to do with
+            the <code>print</code> keyword
+          </p>
+          <p>In Python 2</p>
+          <code>
+            print "Hello, Benedict"
+          </code>
+
+          <p>In Python 3</p>
+          <code>
+            print("Hello, Benedict")
+          </code>
+
+          <p>
+            For other differences between Python 2 and Python 3, check out this
+            <a
+              href="https://www.geeksforgeeks.org/important-differences-between-python-2-x-and-python-3-x-with-examples/"
+              >Article</a
+            >
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Basic_Syntax">
+        <header><h1>Basic Syntax</h1></header>
+        <article>
+          <p>
+            The Python language has many similarities to Perl, C and Java.
+            However, there are definite differences between the languages
+          </p>
+          <p>
+            Python is meant to be an easily readable language. Its formatting is
+            visually uncluttered and it uses English keywords where other
+            languages use punctuation. Unlike many other languages, it does not
+            use curly brackets to delimit blocks, and semicolons after
+            statements are optional. I will pick out a few of the syntactic
+            details that stand out and talk briefly on them.
+          </p>
+          <header><h1>Indentation and Escape sequences</h1></header>
+          <p>
+            Python uses whitespace indentaton, rather than curly user brackets
+            to delimit blocks An increase in indentation comes after certain
+            statements, e.g nested statements; a decrease in indentation
+            signifies the end of the current block.
+          </p>
+          <pre>
+            def add_three(x):
+              sum = x + 3
+              if (x.isnumeric()):
+                print(sum)
+              else:
+                print("Please enter a number")
+          </pre>
+
+          <p>
+            Python emphasises readability and clean code. Escape sequences also
+            help in this regard. Python's interaction with users is also
+            commendable. Using the <code>input</code> keyword, data can be
+            collected from users. For this data to be entered on a new line,
+            Python provides a code for that.
+          </p>
+          <pre>
+            input('Please enter your name: \n')
+          </pre>
+          <p>result:</p>
+          <pre>
+            Please enter your name:
+            *cursor*
+          </pre>
+
+          <header><h1>Quotation and Comments in Python</h1></header>
+          <p>
+            A hash sign (#) that is not inside a string literal begins a
+            comment. All characters after the # and up to the end of the
+            physical line are part of the comment and the Python interpreter
+            ignores them.
+          </p>
+
+          <pre>
+            #A comment 
+            print("Showing comment")
+          </pre>
+
+          <p>
+            Python accepts both single (') and double (") quotation marks.
+            However, as with other languages If you are starting an expression
+            with a single quotation mark, kindly finish it with a single
+            quotation mark, else, the interpreter will scream and point you
+            precisely to your error. Another fun fact about the Python
+            interpreter, the error messages are quite informative and detailed.
+          </p>
+        </article>
+      </section>
+
+      <section class="main-section" id="Variables_and_Data_Types">
+        <header><h1>Variables and Data Types</h1></header>
+        <article>
+          <p>
+            Variables are reserved memory locations tos store values, like
+            containers. This means that once you create a variable, you reserve
+            some space in memory
+          </p>
+          <p>
+            In Python, you do not need to create variables with a particular
+            keyword, you simply go ahead and write the variable name and assign
+            a value to it. The equal sign (=) is used to assign values to
+            variables in Python.
+          </p>
+          <pre>
+            counter = 100        # An integer assignment 
+            miles = 1000.0       # A floating-point assignment 
+            name = "Benedict"    # A string assignment
+          </pre>
+
+          <p>
+            There are exciting data types in Python, not so different from the
+            normal data types in other languages. Python does have a soft spot
+            for numbers. You will come across floating-point numbers and
+            integers, both of the data type: number. To get the type of an
+            element, simply do <code>type(element)</code>. Some of the data
+            types in Python are listed below with examples
+          </p>
+
+          <pre>
+            100                 # Integer
+            1000.7              # Floating-Point number
+            2+3j                # Complex
+            'I am a string'     # String
+            True                # Boolean
+          </pre>
+        </article>
+      </section>
+
+      <section class="main-section" id="Basic_Operators">
+        <header><h1>Basic Operators</h1></header>
+        <article>
+          <p>
+            Operators are constructs which can manipulate the value of
+            operands.Operands are the elements involved in an expression or
+            operation.
+          </p>
+          <p>
+            Consider the expression <code>4 + 5 = 9</code>. Here,
+            <code>4</code> and <code>5</code> are called <em>operands</em> and
+            <code>+</code> is called <em>operator</em>
+          </p>
+          <p>
+            There are several types of operators in Python. Below are some of
+            these operators
+          </p>
+          <ol>
+            <li>
+              Arithmetic Operators: e.g Addition (+), Subtraction (-),
+              Multiplication (*), Division (/), Modulus (%)
+            </li>
+            <li>
+              Comparison Operators: e.g Equal (==), Not equal (!=), Less than
+              (<), Greater than (>)
+            </li>
+            <li>
+              Assignment Operators: e.g Assign (=), Add and Assign (+=),
+              Subtract and Assign (-=)
+            </li>
+            <li>
+              Logical Operators: e.g Logical OR (or), Logical AND (and), Logical
+              NOT (not)
+            </li>
+          </ol>
+        </article>
+      </section>
+
+      <section class="main-section" id="Decision_Making">
+        <header><h1>Decision Making</h1></header>
+        <article>
+          <p>
+            Decision making is anticipation of conditions occuring while
+            executing a program and specifying actions to be taken according to
+            these conditions.
+          </p>
+          <p>
+            Decision structures evaluate multiple expressions which produce TRUE
+            or FALSE as outcome. An action is then decided according to the
+            outcome.
+          </p>
+          <p>
+            Python uses <code>if...else</code> statements for decision making.
+            This statement is quite powerful and makes a program dynamic.
+          </p>
+          <pre>
+            def add_three(x):
+              sum = x + 3
+              if (x.isnumeric()):    # Check if the value collected is a number
+                print(sum)
+              else:
+                print("Please enter a number")
+          </pre>
+        </article>
+      </section>
+
+      <section class="main-section" id="Loops">
+        <header><h1>Loops</h1></header>
+        <article>
+          <p>
+            Generally, statements are executed sequentially: The first statement
+            in a function is executed first, followed by the second and so on.
+            Loops are for situations when you need a block of code to run
+            several number of times.
+          </p>
+          <ul>
+            <li>
+              <em>while loop</em> repeats a statement or group of statements
+              while a given condition is TRUE.
+            </li>
+            <pre>
+              count = 0
+              while (count < 4):
+                print ('The count is: ', count)
+                count = count + 1
+
+              print 'Good bye'
+
+              result:
+                the count is:  0
+                the count is:  1
+                the count is:  2
+                the count is:  3
+                Good bye
+            </pre>
+
+            <li>
+              <em> for loop </em> executes a sequence of statements multiple
+              times and abbreviates the code that manages the loop variable.
+            </li>
+            <pre>
+              letter = 'Python'
+              for x in letter:
+                print ('the current letter: ', x)
+
+              result:
+                the current letter: P
+                the current letter: y
+                the current letter: t
+                the current letter: h
+                the current letter: o
+                the current letter: n
+            </pre>
+
+            <li>
+              <em>nested loops</em> allow you to use or more loops inside any
+              any other loop
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Lists">
+        <header><h1>Lists</h1></header>
+        <article>
+          <p>
+            Lists in Python is the same as arrays in JavaScript. List is the
+            most versatile data type available in Python which can contain
+            several element of different data types, its values are separated
+            with a comma and all of them placed within sqaure brackets
+          </p>
+          <code>
+            list1 = [1, 2, 'mathematics', true, 0.5]
+          </code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Functions">
+        <header><h1>Functions</h1></header>
+        <article>
+          <p>
+            A function is a block of organized, reusable code that is used to
+            perform a single, related action. Functions provide better
+            modularity for your application and a high degree of code reusing.
+          </p>
+          <p>
+            As you already know, Python gives you many built-in functions like
+            print(), etc. but you can also create your own functions. These
+            functions are called user-defined functions.
+          </p>
+          <pre>
+             def add_three(x):
+              sum = x + 3
+              if (x.isnumeric()):    # Check if the value collected is a number
+                print(sum)
+              else:
+                print("Please enter a number")
+          </pre>
+        </article>
+      </section>
+
+      <section class="main-section" id="Reference">
+        <header><h1>Reference</h1></header>
+        <article>
+          <p>
+            The content of this documentation was lifted from the underlisted
+            pages and some of them are personal.
+          </p>
+          <ul>
+            <li>
+              <a href="https://www.tutorialspoint.com/python/"
+                >Tutorials Point</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://en.wikipedia.org/wiki/Python_(programming_language)#Syntax_and_semantics"
+                >Wikipedia</a
+              >
+            </li>
+            <li><a href="https://realpython.com/">Real Python</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
