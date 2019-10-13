@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ Flexbox to congestify the elements
+ space-between to create space between the elements of the unordered list
+ align-items will center the list items
+*/
+#navbar {
+  position: fixed;
+  margin: 0;
+  z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(25, 26, 26);
+  color: white;
+  top: 0;
+}
+
+.page-title {
+  font-size: 1.75rem;
+  margin-left: 0.5em;
+}
+
+.page-title a {
+  text-decoration: none;
+  color: white;
+}
+
+.page-title a:hover {
+  color: rgb(250, 101, 126);
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 1.5rem;
+  font-size: 1.5em;
+}
+
+.navbar-links li:hover {
+  background-color: rgb(250, 101, 126);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+/* Hamburger Menu */
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    position: fixed;
+    margin: 0;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(25, 26, 26);
+    color: white;
+    top: 0;
+  }
+
+  span#project-header {
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.5em;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  #inner {
+    width: 100vw;
+  }
+
+  #welcome-section {
+    width: 100%;
+  }
+
+  #say-hello ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#welcome-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('assets/wonders.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#project-pic {
+  width: 80vw;
+  height: 80vh;
+  margin: 5px;
+  padding: 2px;
+}
+
+#inner {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+
+  #inner {
+    width: 100%;
+  }
+}
+
+.myImg {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#inner span h1 span.name {
+  font-size: 1.5em;
+}
+
+span#project-header {
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  border: 2px solid transparent;
+  margin: 12px;
+}
+
+#project-pic {
+  width: 450px;
+  height: 300px;
+  margin: 12px;
+  padding: 2px;
+}
+
+div.project-title {
+  font-size: 1em;
+  text-align: center;
+  font-weight: bold;
+  color: #008080;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* span.show-all {
+  border: 1px solid lightblue;
+  text-align: center;
+} */
+
+.show-all {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  height: 30px;
+  margin: 20px auto 90px;
+  background: #e0ebe8;
+  color: #008080;
+  font-weight: bold;
+  font-size: 1em;
+  border: 2px solid lightblue;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+#say-hello {
+  padding: 1rem;
+  background: #ffeeff;
+}
+
+#say-hello ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#say-hello ul li a {
+  display: flex;
+  flex-direction: column;
+}
+
+#say-hello ul li a span {
+  color: black;
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-github {
+  color: grey;
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+
+#say-hello h2 {
+  text-align: center;
+}
+
+footer {
+  padding: 1px;
+  text-align: center;
+}
